@@ -13,13 +13,11 @@ fs.writeFileSync("./dat1.txt","hey this is my work","utf-8");//it overwrites it'
 fs.appendFileSync("./dat1.txt" , "new work", "utf-8");
 //to rename
 fs.renameSync("./dat1.txt","data3.txt");
-fs.unlinkSync("./data3.txt"); //for deleting the data
+fs.unlinkSync("./data3.txt"); //for  d the data
 if(data.match("H")){
 console.log("h is found");
 const newdata = data.replace("H","ABES");
 fs.writeFileSync("./data.txt", newdata, "utf-8");
     
 }
-
-
-
+ 
