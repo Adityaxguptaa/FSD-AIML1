@@ -11,8 +11,8 @@ const read = async () => {
 }
 const write = async () => {
     try{
-        await fs.writeFile("./data2.txt","This is my new file","utf8");
-        console.log(data)
+        await fs.writeFile("./data3.txt","This is my new file","utf8");
+        
 
     }
     catch(error){
