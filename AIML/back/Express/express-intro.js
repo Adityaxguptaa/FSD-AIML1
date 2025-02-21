@@ -9,6 +9,13 @@ const port = 3000;
 app.get('/',(req,res)=>{
     res.send("Welcome to express");
 });
+
+// POST MEANS SENDING DATA TO SERVER HERE WE SEND DATA FROM BODY
+app.use(express.json());
+app.post('/users',(req,res)=>{
+    const { name } = req.body;
+    res.send(`My name is ${name}`)
+});
 app.get('/api/:name/:rollno',(req,res)=>{
     try{
         const {name,rollno} = req.params;
